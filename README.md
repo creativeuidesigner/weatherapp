@@ -13,7 +13,7 @@ Features
 
 Setup Instructions
 1. Clone the Repository
-  git clone https://github.com/creativeuidesigner/weather-report-app.git
+  git clone https://github.com/creativeuidesigner/weatherapp.git
   cd weather-report-app
 
 2. Get an API Key from AccuWeather
