@@ -116,7 +116,7 @@ function downloadExcel($citiesData) {
         $output .= "{$city['name']}\t{$city['country']}\t{$city['region']}\t{$city['timezone']}\t{$city['rank']}\t";
         $output .= "{$city['latitude']}\t{$city['longitude']}\t{$city['weather_text']}\t";
         $output .= ($city['is_day_time'] ? 'Day' : 'Night') . "\t";
-        $output .= "{$city['temperature_celsius']}°C\t{$city['temperature_fahrenheit']}°F\n";
+        $output .= "{$city['temperature_celsius']}\t{$city['temperature_fahrenheit']}\n";
     }
 
     // Set headers for download
@@ -211,8 +211,8 @@ if (isset($_POST['download_excel'])) {
                 <td><?= $city['longitude'] ?></td>
                 <td><?= $city['weather_text'] ?></td>
                 <td><?= $city['is_day_time'] ? 'Day' : 'Night' ?></td>
-                <td><?= $city['temperature_celsius'] ?>°C</td>
-                <td><?= $city['temperature_fahrenheit'] ?>°F</td>
+                <td><?= $city['temperature_celsius'] ?></td>
+                <td><?= $city['temperature_fahrenheit'] ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
